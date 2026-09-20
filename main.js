@@ -4,10 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
       // ================================================================= */
     // CONFIGURATION API (COD AFFILIATE MAROC)                            */
     // ================================================================= */
-    const API_TOKEN = "COD_i674J30l6lagCPTLReixKEOoFR1lSioz";
-    const PRODUCT_ID = "ID_DU_PRODUIT"; // 👈 Remplacez par l'ID de votre vêtement depuis le catalogue
-    const API_ENDPOINT = "https://codaffiliate.ma/api/v1/leads"; // ✔️ CORRECTION : URL absolue et complète
-
+    const PRODUCT_ID = "12345"; // 👈 Un numéro fictif pour le test, en attendant votre vrai produit
+    const API_ENDPOINT = "/.netlify/functions/submit-order"; // ✅ Ce chemin local Netlify uniquement
 
     // === 1. LOGIQUE DU BOUTON D'AFFILIATION ET DES ANIMATIONS ===
     const ctaButton = document.getElementById("main-cta");
