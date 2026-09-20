@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offre Exclusive Maroc | Le Produit Concurenciel</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Google Fonts pour une typographie moderne -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / navar Minimaliste -->
+     <header>
+        <div class="container navbar">
+            <div class="logo">ShopySmart<span>.ma</span></div>
+            <div class="badge-promo">Offre Spéciale Maroc 🇲🇦</div>
+        </div>
+     </header>
+
+     <!-- Section hero -->
+     <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                 <h1>Simplifier votre quotidien avec la solution N°1 au Maroc</h1> 
+                <p class="subheadline">Découvrez le secret que des milliers de Marocains utilisent pour économiniser du temps et de l'énergie au quotidien. <span class="highlight">Bghiti t'hni rassek ?</span> C'est ici.</p>
+
+                <div class="price-box">
+                    <span class="old-price">599 DH</span>
+                    <span class="current-price">349 DH</span>
+                    <span class="discount">-40% Réduction</span>
+                </div>
+
+                <!-- CTA qui fait défiler la page jusqu'au formulaire COD -->
+                 <a href="#checkout-section" class="btn-cta" id="main-cta">
+                    Acheter Maintenant (Paiement à la Livraison) →
+                </a>
+
+                 <div class="trust-signals">
+                    <span>⚡ Livraison Rapide (Partout au Maroc)</span>
+                    <span>🔒 Paiement Sécurisé</span>
+                 </div>
+            </div>
+
+            <div class="hero-image">
+                <!-- Remplacez par l'image de votre produit d'affiliation -->
+                 <div class="image-placeholder">
+                  <img src="max2.jpeg" alt="Produit Vedette" id="trigger-lightbox" style="cursor: zoom-in;">
+
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section bénéfices -->
+     <section class="benefits">
+        <div class="container">
+            <h2>Pourquoi choisir ce produit ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">🇲🇦</div>
+                    <h3>Qualité Premium</h3>
+                    <p>Sélectionné et testé pour répondre aux exigences de nos foyers.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">💰</div>
+                    <h3>Économique</h3>
+                    <p>Le meilleur rapport qualité-prix actuellement disponible sur le marché.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🛠️</div>
+                    <h3>Garantie & Support</h3>
+                    <p>Un service client à votre écoute pour vous accompagner après l'achat</p>
+                </div>
+            </div> 
+        </div>
+     </section>
+
+     <!-- ====== COULEZ LE BLOC CI-DESSOUS ICI ====== -->
+      <section id="checkout-section" class="checkout">
+        <div class="container form-container">
+            <h2>Remplissez le formulaire ci-dessous pour commander</h2>
+            <p class="form-subtitle">⚠️ Offre limitée à l'état du stock actuel. Livraison gratuite partout au Maroc.</p>
+        
+
+        <form id="codForm">
+            <div class="form-group">
+                <label for="fullName"><i class="fa-solid fa-user"></i> Nom et Prénom :</label>
+                <input type="text" id="fullName" required placeholder="Ex: Ahmed Alami">
+            </div>
+
+            <div class="form-group">
+                <label for="phone"><i class="fa-solid fa-phone"></i> Numéro de Téléphone :</label>
+                <input type="tel" id="phone" pattern="^(05|06|07)[0-9]{8}$" required placeholder="Ex: 0612345678">
+            </div>
+
+            <div class="form-group">
+                <label for="city"><i class="fa-solid fa-location-dot" ></i> Ville :</label>
+                <input type="text" id="city" required placeholder="Ex: Casablanca, Rabat, Marrakesh...">
+            </div>
+
+            <div class="form-group">
+                <label for="size"><i class="fa-solid fa-shirt" ></i>Choisir la Taille :</label>
+                <select id="size" required>
+                    <option value="">-- Sélectionner une taille --</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+        
+
+           <button type="submit" id="submitBtn" class="btn-submit">
+            <i class="fa-solid fa-check"></i> Confimer ma commande (349 DH)
+           </button>
+        </form>
+        <div id="responseMessage" style="display: none; margin-top: 20px; padding: 15px; border-radius: 5px; font-weight: bold; text-align: center;"></div>
+    </div>
+ </section>
+  <!-- Section Témoignages (Preuve Sociale Locale) -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Ce que disent nos clients au Maroc</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="comment">Franchement, top ! Livré en 48h à Casablanca. Le produit correspond exactement à la description. Ana frhana bzaf !  </p>
+                    <h4 class="client-name">Sanaa M. <span class="city">(Casablanca)</span></h4>
+                    <div class="stars">⭐⭐⭐⭐⭐ Stars</div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 ShopySmart.ma - Tous droits réservés,</p>
+            <p class="disclaimer">Cette page contient des liens d'affiliation. Si vous achetez via nos liens, nous percevoir une commission sans frais supplémentaire pour vous.</p>
+
+       </div>
+    </footer>
+    <script src="main.js"></script>
+
+        <!-- À AJOUTER TOUT EN BAS DE VOTRE HTML -->
+     <div id="custom-lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="img-zoomed" src="">
+
+     </div>
+
+</body>
+</html>

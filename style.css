@@ -1,0 +1,482 @@
+/* Variables de couleur pour un épuré */
+:root {
+    --primary-color: #00a86b;
+    --text-dark: #2d3748;
+    --text-light: #718096;
+    --bg-light: #f7fafc;
+    --white: #ffffff;
+    --accent-red: #e53e3e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {text-align: center;}
+
+/* Navbar */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.badge-promo {
+    background-color: #ebf8f2;
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+    background: linear-gradient(180deg, var(--white) 0%, var(--bg-light) 100%);
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #1a202c;
+}
+
+.subheadline {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Bloc Prix */ 
+.price-box {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.old-price {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: var(--text-light);
+}
+
+.current-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.discount {
+    background-color: var(--accent-red);
+    color: var(--white);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Bouton CTA Réactif */
+.btn-cta {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 168, 107, 0.4);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-cta:hover {
+    background-color: #008f5a;
+    transform: translateY(-2px);
+}
+
+.trust-signals {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+/* image du produit */
+.hero-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0,0.15);
+}
+
+/* Section Bénéfices */
+.benefits {
+    padding: 8px 0 60px 0;
+}
+
+.benefits h2, .testimonials h2{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.benefit-card {
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.benefit-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.benefit-card p {
+    color: var(--text-light);
+    font-size: 15px;
+}
+
+/* Section Témoignages */
+.testimonials {
+    background-color: var(--bg-light);
+    padding: 60px 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.comment {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #4a5568;
+}
+
+.client-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.client-name .city {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    background-color: #1a202c;
+    color: #a0aec0;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.disclaimer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #718096;
+}
+
+/* Responsif Design pour mobile */
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .trust-signals {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .benefits-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+/* <--- C'était la toute dernière ligne de votre fichier d'origine */
+
+
+/* ==========================================
+   AJOUTEZ LE CODE DE LA LIGHTBOX JUSTE ICI :
+   ========================================== */
+
+/* Style de la Lightbox */
+.lightbox {
+    display: none; /* Caché par défaut */
+    position: fixed; 
+    z-index: 9999; /* Reste au-dessus de tout le site */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fond noir transparent */
+    align-items: center;
+    justify-content: center;
+
+}
+.lightbox-content {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    animation: zoomIn 0.3s ease;
+}
+
+/* Bouton pour fermer */
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0.7); opacity: 0;}
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* ================================================================= */
+/* 👈 COLLEZ LE BLOC DU FORMULAIRE ET DU MOBILE JUSTE ICI (TOUT EN BAS) */
+/* ================================================================= */
+
+.checkout {
+    background-color: var(--bg-light);
+    padding: 60px 20px;
+}
+.form-container {
+    max-width: 550px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+ }
+ .form-container h2 {
+    font-size: 24px;
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.form-subtitle {
+    text-align: center;
+    color: var(--accent-red);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 15px;
+}
+
+.form-group label i {
+    color: var(--primary-color);
+    margin-right: 6px;
+    width: 20px;
+    text-align: center;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #edf2f7;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(0, 168, 107, 0.1);
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 168, 107, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px;
+}
+
+.btn-submit i {
+    margin-right: 8px;
+}
+
+.btn-submit:hover {
+    background-color: #008f5a;
+    transform: translateY(-2px);
+}
+
+.btn-submit:active {
+    transform: translateY(1px);
+}
+
+.btn-submit:disabled {
+    background-color: var(--text-light);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    .checkout {
+        padding: 40px 10px;
+    }
+
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    .form-subtitle {
+        font-size: 13px;
+    }
+
+    .btn-submit {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
