@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // ================================================================= */
     // CONFIGURATION NETLIFY SERVERLESS (PLUS DE CLÉ API ICI 🔒)          */
     // ================================================================= */
-    const PRODUCT_ID = "12345"; // 👈 Votre numéro de produit fictif pour le test
-    const API_ENDPOINT = "/.netlify/functions/submit-order"; // ✅ Chemin local privé Netlify
+    const PRODUCT_ID = "34"; // ✅ Votre véritable ID produit est maintenant configuré !
+    const API_ENDPOINT = "/.netlify/functions/submit-order";
+
 
     // === 1. LOGIQUE DU BOUTON D'AFFILIATION ET DES ANIMATIONS ===
     const ctaButton = document.getElementById("main-cta");
