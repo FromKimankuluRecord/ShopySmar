@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     
-      // ================================================================= */
-    // CONFIGURATION API (COD AFFILIATE MAROC)                            */
+ document.addEventListener("DOMContentLoaded", function() {
+
     // ================================================================= */
-    const API_TOKEN = "COD_i674J30l6lagCPTLReixKEOoFR1lSioz";
-    const PRODUCT_ID = "ID_DU_PRODUIT"; // 👈 Remplacez par l'ID de votre vêtement depuis le catalogue
-    const API_ENDPOINT = "https://codaffiliate.ma/api/v1/leads"; // ✔️ CORRECTION : URL absolue et complète
+    // CONFIGURATION VERCEL SERVERLESS (PLUS DE CLÉ API ICI 🔒)          */
+    // ================================================================= */
+    const PRODUCT_ID = "34"; // ✅ Votre véritable ID produit Cod Affiliate Maroc
+    const API_ENDPOINT = "/api/submit-order"; // 🟩 Chemin universel compatible Vercel
 
 
     // === 1. LOGIQUE DU BOUTON D'AFFILIATION ET DES ANIMATIONS ===
