@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/submit-order",
+      "destination": "/netlify/functions/submit-order.js"
+    }
+  ]
+}
